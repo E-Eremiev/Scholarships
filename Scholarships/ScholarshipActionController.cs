@@ -6,12 +6,11 @@ namespace Scholarships
 
     public class ScholarshipActionController
     {
-        private ScholarshipView view = new ScholarshipView();
-
         public ScholarshipActionController()
         {
             try
-            {
+            { 
+                ScholarshipView view = new ScholarshipView();
                 ScholarshipModel model = new ScholarshipModel();
                 Console.Write("Въведи Доход: ");
                 model.Income = view.Input();
